@@ -4,6 +4,7 @@
 
 ScavTrap::ScavTrap() : maxHP(100), maxEnergyP(50) ,meleeAttackDmg(20), rangedAttackDmg(15), armorReduction(3)
 {
+	name = "ClapTrap";
 	this->commonInitializer();
 }
 
@@ -20,11 +21,10 @@ ScavTrap::~ScavTrap()
 
 void	ScavTrap::commonInitializer()
 {
-	name = "ClapTrap";
 	HP = 100;
 	energyP = 50;
 	lv = 1;
-	std::cout << name << "is born as a scav boy" << std::endl;
+	std::cout << name << " is born as a scav boy" << std::endl;
 }
 
 /*actions*/
@@ -55,15 +55,15 @@ void	ScavTrap::beRepaired(unsigned int amount)
 	std::cout << name << " had " << tempHP << " questions " << "but then he studied and now has " << HP << " questions" << std::endl;
 }
 
-void	ScavTrap::vaulthunter_dot_exe(std::string const & target)
+void	ScavTrap::challengeNewcomer(std::string const & target)
 {
-	std::string moves[5] = {" reads a book", " puts speranza in his headphones", " ", " looks in another direction", " does nothing"};
+	std::string moves[5] = {" to read a book", " in a pony race", " to stare at each other", " to swim in tears", " in a banana fight"};
 
 	(void)maxEnergyP;
 	if (energyP >= 25)
 	{
 		energyP -= 25;
-		std::cout << name << moves[rand() % 5] << " dealing " << rand() % 10 + 25 << " knowledge damage at " << target <<std::endl;
+		std::cout << name << " challenges " << target << moves[rand() % 5] << " a pro move" << std::endl;
 	}
 	else
 	{

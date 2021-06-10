@@ -16,6 +16,7 @@ INCDIR = 		./incs
 
 #Files
 FILES =			FragTrap.cpp \
+				ScavTrap.cpp \
 				main.cpp
 
 #Srcs

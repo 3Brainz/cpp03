@@ -4,6 +4,7 @@ int main(void)
 {
 	FragTrap trapper("Trapper");
 
+	srand(time(NULL));
 	trapper.meleeAttack("ciro");
 	trapper.rangedAttack("luca");
 	trapper.takeDamage(50);

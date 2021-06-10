@@ -4,6 +4,7 @@
 
 FragTrap::FragTrap() : maxHP(100), maxEnergyP(100) ,meleeAttackDmg(30), rangedAttackDmg(20), armorReduction(5)
 {
+	name = "ClapTrap";
 	this->commonInitializer();
 }
 
@@ -20,11 +21,10 @@ FragTrap::~FragTrap()
 
 void	FragTrap::commonInitializer()
 {
-	name = "ClapTrap";
 	HP = 100;
 	energyP = 100;
 	lv = 1;
-	std::cout << name << "is born as a clap boy" << std::endl;
+	std::cout << name << " is born as a clap boy" << std::endl;
 }
 
 /*actions*/
