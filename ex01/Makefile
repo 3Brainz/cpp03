@@ -1,5 +1,5 @@
 #Name
-NAME = 
+NAME = FragTrap
 
 #Compiler
 CC = 			clang++
@@ -15,7 +15,8 @@ OBJDIR =  		./objs
 INCDIR = 		./incs
 
 #Files
-FILES =
+FILES =			FragTrap.cpp \
+				main.cpp
 
 #Srcs
 SRCS = 			$(foreach FILE, $(FILES), $(shell find $(SRCDIR) -name $(FILE)))
