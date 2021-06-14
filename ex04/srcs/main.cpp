@@ -34,7 +34,7 @@ int main(void)
 	slav.challengeNewcomer("pat' t");
 	slav.challengeNewcomer("gianno");
 	ninja.meleeAttack("ciro");
-	ninja.rangedAttack("luca");
+	ninja.rangedAttack("luco");
 	ninja.takeDamage(50);
 	ninja.takeDamage(50);
 	ninja.takeDamage(50);
