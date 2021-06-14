@@ -16,7 +16,12 @@ FragTrap::FragTrap(std::string name) : maxHP(100), maxEnergyP(100) , meleeAttack
 
 FragTrap::~FragTrap()
 {
+	std::cout << "frag destroyed" << std::endl;
+}
 
+FragTrap::FragTrap(FragTrap &frag) : name(frag.name), HP(frag.HP), maxHP(frag.maxHP), maxEnergyP(frag.maxEnergyP), meleeAttackDmg(frag.meleeAttackDmg), rangedAttackDmg(frag.rangedAttackDmg), armorReduction(frag.armorReduction)
+{	
+	std::cout << "copy executed" << std::endl;
 }
 
 void	FragTrap::commonInitializer()

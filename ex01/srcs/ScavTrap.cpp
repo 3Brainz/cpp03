@@ -16,7 +16,12 @@ ScavTrap::ScavTrap(std::string name) : maxHP(100), maxEnergyP(50) , meleeAttackD
 
 ScavTrap::~ScavTrap()
 {
+	std::cout << name << " boom" << std::endl;
+}
 
+ScavTrap::ScavTrap(ScavTrap &frag) : name(frag.name), HP(frag.HP), maxHP(frag.maxHP), maxEnergyP(frag.maxEnergyP), meleeAttackDmg(frag.meleeAttackDmg), rangedAttackDmg(frag.rangedAttackDmg), armorReduction(frag.armorReduction)
+{	
+	std::cout << " copy executed" << std::endl;
 }
 
 void	ScavTrap::commonInitializer()

@@ -1,5 +1,5 @@
 #Name
-NAME = 
+NAME = trapWar
 
 #Compiler
 CC = 			clang++
@@ -15,7 +15,11 @@ OBJDIR =  		./objs
 INCDIR = 		./incs
 
 #Files
-FILES =
+FILES =			ClapTrap.cpp \
+				ScavTrap.cpp \
+				FragTrap.cpp \
+				NinjaTrap.cpp \
+				main.cpp
 
 #Srcs
 SRCS = 			$(foreach FILE, $(FILES), $(shell find $(SRCDIR) -name $(FILE)))

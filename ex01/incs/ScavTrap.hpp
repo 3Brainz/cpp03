@@ -10,6 +10,7 @@ public:
 	ScavTrap();
 	ScavTrap(std::string name);
 	~ScavTrap();
+	ScavTrap(ScavTrap &frag);
 	/*actions*/
 	void	rangedAttack(std::string const & target);
 	void	meleeAttack(std::string const & target);
