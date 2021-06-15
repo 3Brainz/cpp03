@@ -11,6 +11,7 @@ public:
 	FragTrap(std::string name);
 	~FragTrap();
 	FragTrap(FragTrap &frag);
+	FragTrap &	operator = (const FragTrap & toCopy);
 	/*actions*/
 	void	rangedAttack(std::string const & target);
 	void	meleeAttack(std::string const & target);
@@ -21,14 +22,14 @@ private:
 	/*basic stats*/
 	std::string		name;
 	long			HP;
-	const	long	maxHP;
+	long			maxHP;
 	long			energyP;
-	const	long	maxEnergyP;
+	long			maxEnergyP;
 	int				lv;
 	/*attacks*/
-	const	int		meleeAttackDmg;
-	const	int		rangedAttackDmg;
-	const	int		armorReduction;
+	int				meleeAttackDmg;
+	int				rangedAttackDmg;
+	int				armorReduction;
 	/*private funcs*/
 	void		commonInitializer();
 };

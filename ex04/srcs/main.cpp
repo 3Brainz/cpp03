@@ -33,6 +33,7 @@ int main(void)
 	slav.challengeNewcomer("eruto");
 	slav.challengeNewcomer("pat' t");
 	slav.challengeNewcomer("gianno");
+	ninja.printStats();
 	ninja.meleeAttack("ciro");
 	ninja.rangedAttack("luco");
 	ninja.takeDamage(50);
@@ -43,6 +44,7 @@ int main(void)
 	ninja.ninjaShoebox(trapper);
 	ninja.ninjaShoebox(slav);
 	ninja.ninjaShoebox(ninja);
+	super.printStats();
 	super.meleeAttack("piotta");
 	super.ninjaShoebox(ninja);
 	super.vaulthunter_dot_exe("rammsteins");

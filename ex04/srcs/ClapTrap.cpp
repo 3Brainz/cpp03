@@ -37,6 +37,24 @@ ClapTrap::~ClapTrap()
 	std::cout << name << " father destroyed " << std::endl;
 }
 
+ClapTrap &	ClapTrap::operator = (const ClapTrap & toCopy)
+{
+	if (this == &toCopy)
+	{
+		return (*this);
+	}
+	this->name = toCopy.name;
+	this->HP = toCopy.HP;
+	this->maxHP = toCopy.maxHP;
+	this->energyP = toCopy.energyP;
+	this->maxEnergyP = toCopy.maxEnergyP;
+	this->lv = toCopy.lv;
+	this->meleeAttackDmg = toCopy.meleeAttackDmg;
+	this->rangedAttackDmg = toCopy.rangedAttackDmg;
+	this->armorReduction = toCopy.armorReduction;
+	return (*this);
+}
+
 void	ClapTrap::commonInitializer()
 {
 	HP = 100;
@@ -50,6 +68,11 @@ void	ClapTrap::commonInitializer()
 std::string	ClapTrap::getName(void) const
 {
 	return(this->name);
+}
+
+void	ClapTrap::printStats(void)
+{
+	std::cout << this->name << " HP:" << this->HP << " EP:" << this->energyP << " Melee:" << this->meleeAttackDmg << " ranged:" << this->rangedAttackDmg << std::endl;
 }
 
 /*actions*/

@@ -12,6 +12,7 @@ public:
 	ClapTrap(std::string name, long HP, long maxHP, long energyP, long maxEnergyP, int lv, int meleeAttackDmg, int rangedAttackDmg, int armorReduction);
 	ClapTrap(ClapTrap const &toCopy);
 	~ClapTrap();
+	ClapTrap &	operator = (const ClapTrap & toCopy);
 	/*actions*/
 	void	rangedAttack(std::string const & target);
 	void	meleeAttack(std::string const & target);
@@ -19,6 +20,7 @@ public:
 	void	beRepaired(unsigned int amount);
 	void	vaulthunter_dot_exe(std::string const & target);
 	std::string getName(void) const;
+	void	printStats(void);
 protected:
 	/*basic stats*/
 	std::string		name;

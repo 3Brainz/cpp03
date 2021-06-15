@@ -7,7 +7,7 @@ SuperTrap::SuperTrap() :ClapTrap("SuperTrap", 100, 100, 50, 50, 1, 20, 15, 3), F
 	this->commonInitializer();
 }
 
-SuperTrap::SuperTrap(std::string name) :ClapTrap(name, 100, 100, 100, 10, 1, 30, 20, 5) , FragTrap(name), NinjaTrap(name)
+SuperTrap::SuperTrap(std::string name) :ClapTrap(name, 100, 100, 120, 120 , 1, 60, 20, 5) , FragTrap(name), NinjaTrap(name)
 {
 	this->commonInitializer();
 }
