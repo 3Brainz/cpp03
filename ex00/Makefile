@@ -1,5 +1,5 @@
 #Name
-NAME = FragTrap
+NAME = ex00
 
 #Compiler
 CC = 			clang++

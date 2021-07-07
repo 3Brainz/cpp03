@@ -86,7 +86,6 @@ void	FragTrap::vaulthunter_dot_exe(std::string const & target)
 {
 	std::string moves[5] = {" moves like jagger", " sips a huge sipe from his coke and burps", " prays the sun", " looks in another direction", " does nothing"};
 
-	(void)maxEnergyP;
 	if (energyP >= 25)
 	{
 		energyP -= 25;
