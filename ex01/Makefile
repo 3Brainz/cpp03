@@ -1,5 +1,5 @@
 #Name
-NAME = ex01
+NAME = thisIsNotBorderlands1
 
 #Compiler
 CC = 			clang++

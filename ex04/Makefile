@@ -1,5 +1,5 @@
 #Name
-NAME = trapWar2
+NAME = trapWar1
 
 #Compiler
 CC = 			clang++
